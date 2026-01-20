@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:5174", "https://frontend-sigma-fawn-29.vercel.app/"],
+  origin: ["http://localhost:5174", "https://frontend-sigma-fawn-29.vercel.app"],
   credentials: true,
 }));
 app.use(express.json());
