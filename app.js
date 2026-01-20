@@ -15,16 +15,16 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
-app.use(session({
-  secret: "my_secret",
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none"
-  }
-}));
+// app.use(session({
+//   secret: "my_secret",
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     httpOnly: true,
+//     secure: true,
+//     sameSite: "none"
+//   }
+// }));
 
 
 
