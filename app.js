@@ -17,8 +17,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 app.use(session({
   secret: "my_secret",
-  resave: true,
+  resave: false,
   saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none"
+  }
 }));
 
 
